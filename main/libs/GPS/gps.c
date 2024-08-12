@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define GTM -3;
+
 double convert_to_decimal(char *nmea_coord, char indicator) {
     double raw_coord = atof(nmea_coord);
     int degrees = (int)(raw_coord / 100);
@@ -17,6 +19,7 @@ double convert_to_decimal(char *nmea_coord, char indicator) {
 void format_time(char *nmea_time, char *formatted_time) {
     int hours, minutes, seconds;
     sscanf(nmea_time, "%2d%2d%2d", &hours, &minutes, &seconds);
+    hours += GTM;
     sprintf(formatted_time, "%02d:%02d:%02d", hours, minutes, seconds);
 }
 

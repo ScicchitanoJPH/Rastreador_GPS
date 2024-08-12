@@ -27,6 +27,11 @@
         "freertos.h": "c",
         "gps.h": "c",
         "task.h": "c",
-        "stdio.h": "c"
-    }
+        "stdio.h": "c",
+        "wifi_driver.h": "c",
+        "chrono": "c",
+        "nvs_flash.h": "c",
+        "string.h": "c"
+    },
+    "idf.gitPathWin": "C:\\Users\\diego.scicchitano\\.espressif\\tools\\idf-git\\2.39.2\\cmd\\git.exe"
 }
